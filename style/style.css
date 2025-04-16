@@ -1,0 +1,119 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .name {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .logo{
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    border-radius: 5px;
+   box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.5);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .like-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .dislike-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Eng oxirgi ishchilar uchun (quyi reytingdagilar) */
+tr.danger {
+  background-color: #e61414;
+}
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    table, thead, tbody, th, td, tr {
+      display: block;
+      
+      
+      /* width: 100%; */
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+  
+    td {
+      text-align: left;
+      padding-left: 20%;
+      position: relative;
+      height: 40px;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+      
+    }
+  
+    .logo 
+    .name {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+
+ 
