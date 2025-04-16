@@ -68,6 +68,7 @@
 // }
 
 // renderTable();
+
 const workers = [
   { name: "Ali", like: 0, dislike: 0 },
   { name: "Vali", like: 0, dislike: 0 },
